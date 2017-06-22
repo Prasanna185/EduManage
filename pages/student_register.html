@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>EduManage - Register new student</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/common.min.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">EduManage</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search..."/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="staff.html"><i class="fa fa-users fa-fw"></i> Staff</a>
+                        </li>
+                        <li class="active">
+                            <a href="student.html"><i class="fa fa-user-circle-o fa-fw"></i> Student</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-shield fa-fw"></i> Administration<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="course.html"><i class="fa fa-file-text fa-fw"></i> Course</a>
+                                </li>
+                                <li>
+                                    <a href="class.html"><i class="fa fa-window-maximize fa-fw"></i> Class</a>
+                                </li>
+                                <li>
+                                    <a href="subject.html"><i class="fa fa-book fa-fw"></i> Subject</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Student details
+                    </div>
+                    <!-- /.panel-heading -->
+                    <form role="form">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentID" class="control-label">Student ID</label>
+                                    <p class="form-control-static">SBC12145</p>
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="firstName" class="control-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="lastName" class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentApplicationNo" class="control-label">Application No.</label>
+                                    <input type="text" class="form-control" id="applicationNo" placeholder="Application Number" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentAdmissionNo" class="control-label">Admission No.</label>
+                                    <input type="text" class="form-control" id="admissionNo" placeholder="Admission Number" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentUniversityBoardNo" class="control-label">UniversityBoard No.</label>
+                                    <input type="text" class="form-control" id="universityBoardNo" placeholder="UniversityBoard Number" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentRollNo" class="control-label">Roll No.</label>
+                                    <input type="text" class="form-control" id="rollNo" placeholder="Roll Number" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentAdmissionType" class="control-label">Admission Type</label>
+                                    <input type="text" class="form-control" id="admissionType" placeholder="Admission Type" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentAcademicYear" class="control-label">Academic Year</label>
+                                    <input type="text" class="form-control" id="academicYear" placeholder="Academic Year" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentDOJoining" class="control-label">Date of Joining</label>
+                                    <input type="text" class="form-control" id="studentDOJoining" placeholder="Date of Joining" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentCourse" class="control-label">Course</label>
+                                    <input type="text" class="form-control" id="studentCourse" placeholder="Course" />                                                    
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentCombination" class="control-label">Combination</label>
+                                    <input type="text" class="form-control" id="combination" placeholder="Combination" />
+                                </div>
+                            </div>                            
+                            <div class="row">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentClass" class="control-label">Class/Year</label>
+                                    <input type="text" class="form-control" id="ClassYear" placeholder="Class/Year" />                                                    
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentSection" class="control-label">Section</label>
+                                    <input type="text" class="form-control" id="studentSection" placeholder="Section" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentFatherName" class="control-label">Father Name</label>
+                                    <input type="text" class="form-control" id="studentFatherNme" placeholder="Father Name" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentMotherName" class="control-label">Mother Name</label>
+                                    <input type="text" class="form-control" id="studentMotherName" placeholder="Mother Name" />
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                    <label for="studentGender" class="control-label">Gender</label>
+                                    <div>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="gender" id="male" value="male"> Male
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="gender" id="female" value="female"> Female
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentPermanentAddr" class="control-label">Permanent Address</label>
+                                    <input type="text" class="form-control" id="studentPermanentAddr" placeholder="Permanent Address" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentLanguage" class="control-label">Language</label>
+                                    <input type="text" class="form-control" id="language" placeholder="Language" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentMotherTongue" class="control-label">Mother Tongue</label>
+                                    <input type="text" class="form-control" id="studentMotherTongue" placeholder="Mother Tongue" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentDOB" class="control-label">Date of Birth</label>
+                                    <input type="text" class="form-control" id="studentDOB" placeholder="Date of Birth" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentNationality" class="control-label">Nationality</label>
+                                    <input type="text" class="form-control" id="studentNationality" placeholder="Nationality" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentState" class="control-label">State</label>
+                                    <input type="text" class="form-control" id="studentState" placeholder="State" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentReligion" class="control-label">Religion</label>
+                                    <input type="text" class="form-control" id="studentReligion" placeholder="Religion" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentCaste" class="control-label">Caste</label>
+                                    <input type="text" class="form-control" id="studentCaste" placeholder="Caste" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentBloodGroup" class="control-label">Blood Group</label>
+                                    <input type="text" class="form-control" id="studentBloodGroup" placeholder="Blood Group" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentGroup" class="control-label">Group</label>
+                                    <input type="text" class="form-control" id="studentGroup" placeholder="Group" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentGender" class="control-label">Income Certificate Provided</label>
+                                    <div>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="incomeCert" id="incomeCertYes" value="Yes"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="incomeCert" id="incomeCertNo" value="No"> No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="affliatingBoard" class="control-label">Affliating Board</label>
+                                    <input type="text" class="form-control" id="affliatingBoard" placeholder="Affliating Board" />
+                                </div>
+                            </div>
+                            <label for="studentAcademics" class="control-label">Previous Academic Details</label>
+                            <div class="row">                        
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                        <th>#</th>
+                                        <th>Subject</th>
+                                        <th>Marks</th>
+                                        <th>Percentage</th>
+                                        <th>Total Marks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">1</th>
+                                        <td><input type="text" class="form-control" id="subject" placeholder="Subject Name" /></td>
+                                        <td><input type="text" class="form-control" id="marks" placeholder="Marks" /></td>
+                                        <td><input type="text" class="form-control" id="percentage" placeholder="Percentage" /></td>
+                                        <td><input type="text" class="form-control" id="totalMarks" placeholder="Total Marks" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="mobileNo" class="control-label">Mobile Number</label>
+                                    <input type="text" class="form-control" id="mobileNo" placeholder="Mobile Number" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentPhoneNo" class="control-label">Phone Number</label>
+                                    <input type="text" class="form-control" id="studentPhoneNo" placeholder="Phone Number" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentSibling" class="control-label">Sibling Information</label>
+                                    <input type="text" class="form-control" id="studentSibling" placeholder="Sibling Information" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="AdmissionOrderNo" class="control-label">Admission Order No.</label>
+                                    <input type="text" class="form-control" id="AdmissionOrderNo" placeholder="Admission Order Number" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="AdmissionOrderDate" class="control-label">Admission Order Date</label>
+                                    <input type="text" class="form-control" id="AdmissionOrderDate" placeholder="Admission Order Date" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentPOB" class="control-label">Place of Birth</label>
+                                    <input type="text" class="form-control" id="studentPOB" placeholder="Place of Birth" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="ExamRegNo" class="control-label">Exam Reg No.</label>
+                                    <input type="text" class="form-control" id="ExamRegNo" placeholder="Exam Registration Number" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="communicationAddr" class="control-label">Communication Address</label>
+                                    <input type="text" class="form-control" id="communicationAddr" placeholder="Communication Address" />                                                    
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="ExamRegNo" class="control-label">Exam Reg No.</label>
+                                    <input type="text" class="form-control" id="ExamRegNo" placeholder="Exam Registration Number" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="communicationAddr" class="control-label">Communication Address</label>
+                                    <input type="text" class="form-control" id="communicationAddr" placeholder="Communication Address" />                                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentMobileNo" class="control-label">Student Mobile No.</label>
+                                    <input type="text" class="form-control" id="studentMobileNo" placeholder="Student Mobile Number" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="studentPhoneNo" class="control-label">Student Phone No.</label>
+                                    <input type="text" class="form-control" id="studentPhoneNo" placeholder="Student Phone Number" />
+                                </div>
+                            </div>  
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="studentEmail" class="control-label">Student E-mail</label>
+                                    <input type="text" class="form-control" id="studentMobileNo" placeholder="Student E-mail" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="communicationEmail" class="control-label">Communication E-mail</label>
+                                    <input type="text" class="form-control" id="communicationEmail" placeholder="Communication E-mail" />
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="communicationMobileNo" class="control-label">Communication Mobile No.</label>
+                                    <input type="text" class="form-control" id="communicationMobileNo" placeholder="Communication Mobile Number." />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="hostelReq" class="control-label">Hostel required</label>
+                                    <div>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="hostelReq" id="hostelReqYes" value="Yes"> Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="hostelReq" id="hostelReqNo" value="No"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="bh" class="control-label">BH</label>
+                                    <input type="text" class="form-control" id="bh" placeholder="BH" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-lg-12 text-right">
+                                    <button type="button" class="btn btn-default" disabled>View</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </form>
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/common.min.js"></script>
+
+</body>
+
+</html>

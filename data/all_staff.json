@@ -1,0 +1,20 @@
+[
+    {
+        "staff_ID" : "SBC12145",
+        "name" : "A",
+        "gender" : "Male",
+        "dob" : "01-01-1990",
+        "department_name" : "B.Com",
+        "designation" : "Juniour Lecture",
+        "email_ID" : "abcd@abcd.com"
+    },
+    {
+        "staff_ID" : "SBC12146",
+        "name" : "B",
+        "gender" : "Female",
+        "dob" : "01-01-1990",
+        "department_name" : "BCA",
+        "designation" : "Juniour Lecture",
+        "email_ID" : "abcd@abcd.com"
+    }
+]
